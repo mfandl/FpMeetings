@@ -12,7 +12,7 @@ object Meeting1 {
 
     println(sumList(sampleList))
 
-    def myMap(fn: (Int) => Int, lst: List[Int]): List[Int] = {
+    def myMap(fn: Int => Int, lst: List[Int]): List[Int] = {
       if (lst.isEmpty) List.empty
       else List(fn (lst.head)) ::: myMap(fn, lst.tail)
     }
